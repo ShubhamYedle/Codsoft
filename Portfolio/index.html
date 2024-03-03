@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="util.css">
+    <!-- For FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+</head>
+<body>
+        <div class="nav">
+<header>
+            <nav class="red">
+    <h1 class="logo"> Yedle Shubham</h1>
+<ul>
+        <li ><a href="#detail1">Home </a></li>
+        <li  > <a href="#about">About Me</a></li>
+        <li  ><a href="#about">Skills</a></li>
+        
+        <li ><a href="#project">Projects<a></li>
+        <li><a href="#contact">Contact Me</a></li>
+    </ul>
+</nav>
+</header>
+<section id="detail1">           <div class="detail">
+            <h1 class="anim">HI! I'm a Web Developer.</h1>
+            <p class="anim">A hardworking and enthusiastic Student with undergraduate<br> degree in B.tech.</p>
+            <a href="images/Shubham REsume1.pdf" download class="btn-btn2 anim " target="_blank" rel="noopener noreferrer">DownLoad CV</a>
+        </div>
+        <div class="images">
+            <img class="profile" src="images/shubham.jpg">
+        </div>
+      </div>
+    </section>
+      <section id="about">
+        <div class="container">
+            <div class="row">
+              <div class="about-col-1"> <img src="images/IMG_20230628_191019_289.jpg" alt="error image"></div>
+              
+              <div class="about-col-2">  <h1 class="subtitle">About Me </h1>
+                <h3 > HI! I'm Yedle Shubham.</h3>
+                <p>A hardworking and enthusiastic Student with undergraduate degree in B.tech.(Bachelor in Technology). Seeking to use my superior knowledge of Technology in the Technology industry. Dedicated and committed to become a valuable team member.
+                </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            
+              <p class="tab-links" onclick="opentab('education')">Educations</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br>Web Development</li>
+                <li><span>Teamwork</span><br>TeamWork</li>
+                <li><span>leadership</span><br>Leadership</li>
+                <li><span>Language</span><br>java</li>
+                
+              </ul>
+            </div>
+            
+            <div class="tab-contents" id="education">
+
+              <ul>
+                <li><span>graduate(2020-2023)</span><br>graduate(Polytechnic) from Govt. College,Dharashiv.</li>
+                <li><span>Under-graduate(2023-2026)</span><br>Under-graduate(B.Tech) from VDf College of Enginnering,Latur.</li>
+              </ul>
+            </div>
+       
+              </div>
+              </div>
+              </div>
+              </section>
+              <div id="project">
+                <div class="container"><br><br><br><br><br>
+                  <h1 class="subtitle"> My Projects</h1>
+                  <div class="work-list">
+                    <div class="work"><img src="images/call.jpg ">
+                    <div class="layer">
+                      <h3>Calculator</h3>
+                      <p>This is website is used for calculation. You can download it from github.</p>
+                      <a href="https://github.com/ShubhamYedle/Codsoft.git"><i class="fas fa-external-link-alt"></i></a>
+                       </div></div>
+                    <div class="work"><img src="images/land.jpg" ><div class="layer">
+                      <h3>Landing Page</h3>
+                      <p>This is Landing page website. You can download it from github.</p>
+                      <a href="https://github.com/ShubhamYedle/Codsoft.git"><i class="fas fa-external-link-alt"></i></a>
+                    </div></div>
+                    <div class="work"><img src="images/profile.jpg"><div class="layer">
+                      <h3>Profile</h3>
+                      <p>This is Profile website used to communicate. You can download it from github.</p>
+                      <a href="https://github.com/ShubhamYedle/Projects.git"><i class="fas fa-external-link-alt"></i></a>
+                    </div></div>
+                  </div>
+                </div>
+              </div>
+              <div id="contact">
+                <div class="container">
+                  <div class="row">
+                   <div class="contact-left">
+                     <h1 >Contact Me</h1>
+                      <p> <i class="far fa-envelope"></i> shubhamyedle7@gmail.com</p>
+                      <p><i class="fas fa-phone"></i>
+                        7083483226</p>
+                      <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/shubham-yedle-0ab78024a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> <i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/ShubhamYedle" >  <i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/shubham__yedle?igsh=MzNlNGNkZWQ4Mg=="> <i class="fab fa-instagram"></i></a>
+                      </div>
+                    </div>
+                    
+                 
+                  
+                </div>
+              </div>
+              <footer>
+                <div class="footer">
+                <p>&copy; 2024 Yedle Shubham. All rights reserved.</p>
+                </div>
+            </footer>
+            
+    
+   
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    
+    
+</body>
+</html>
